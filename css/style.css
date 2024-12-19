@@ -1,0 +1,64 @@
+@import url("https://webglfundamentals.org/webgl/resources/webgl-tutorials.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, rgb(7, 143, 255), #03e0f4, #56db75);
+  background-size: 300% 300%;
+  /* animation: gradientBackground 10s ease infinite; */
+  color: #222;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-panel {
+  max-width: 400px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  text-align: left;
+}
+
+.info-panel h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #004aad;
+}
+
+.info-panel h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+canvas {
+  width: 700px;
+  height: 500px;
+  background: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
